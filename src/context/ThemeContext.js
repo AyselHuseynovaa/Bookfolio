@@ -6,9 +6,9 @@ class ThemeContextProvider extends Component {
     dark: {
       bg: "#222529",
       txt: "#D65F5f",
-      hover: "rgba(231 ,76,60,0.8",
+      hover: "rgba(231 ,76,60,0.8)",
     },
-    light: { bg: "#F8F9FA", txt: "#222529", hover: "rgba(254, 209, 54, 0.8" },
+    light: { bg: "#fff", txt: "#222529", hover: "rgba(254, 209, 54, 0.8" },
   };
 
   changeTheme = () => {

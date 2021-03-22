@@ -11,6 +11,7 @@ class BookList extends Component {
 <ThemeContext.Consumer>
 
 {(ContextTheme)=>{
+  return(
   <BookContext.Consumer>
   {(ContextBook) => {
     const {books}=ContextBook
@@ -30,6 +31,7 @@ class BookList extends Component {
                 <div className="row">
                   {books.map((book, i) => {
                     return <Book book={book} key={i} />;
+                 
                   })}
                 </div>
               </div>
@@ -37,7 +39,7 @@ class BookList extends Component {
           )
         }}
       </BookContext.Consumer>
-}}
+  )}}
   
 </ThemeContext.Consumer>
 
